@@ -78,43 +78,47 @@ namespace Tests
         }
 
         [Test]
-        public void TestCedula8() // Cambiá el nombre para indicar qué estás probando
+        public void TestCedula8()
         {
             // Pruebo los puntos y guiones
             string cedula = "5227.161-9";
             bool actual = IdUtils.IdIsValid(cedula);
             bool expected = true;
-            Assert.AreEqual(expected, actual);        }
+            Assert.AreEqual(expected, actual);
+        }
         
         [Test]
-        public void TestCedula9() // Cambiá el nombre para indicar qué estás probando
+        public void TestCedula9()
         {
             // Pruebo los puntos y guiones
             string cedula = "5227161-9";
             bool actual = IdUtils.IdIsValid(cedula);
             bool expected = true;
-            Assert.AreEqual(expected, actual);        }
-        
+            Assert.AreEqual(expected, actual);
+        }
+
         [Test]
-        public void TestCedula10() // Cambiá el nombre para indicar qué estás probando
+        public void TestCedula10()
         {
             // Pruebo los puntos y guiones
             string cedula = "5.227161-9";
             bool actual = IdUtils.IdIsValid(cedula);
             bool expected = true;
-            Assert.AreEqual(expected, actual);        }
-        
+            Assert.AreEqual(expected, actual);
+        }
+
         [Test]
-        public void TestCedula11() // Cambiá el nombre para indicar qué estás probando
+        public void TestCedula11()
         {
             // Pruebo los puntos y guiones
             string cedula = "5227161-9";
             bool actual = IdUtils.IdIsValid(cedula);
             bool expected = true;
-            Assert.AreEqual(expected, actual);        }
-        
+            Assert.AreEqual(expected, actual);
+        }
+
         [Test]
-        public void TestCedula12() // Cambiá el nombre para indicar qué estás probando
+        public void TestCedula12()
         {
             // Pruebo los puntos y guiones
             string cedula = "5.227.1619";
@@ -132,7 +136,7 @@ namespace Tests
             string expected = null;
             Assert.AreEqual(expected, actual);
         }
-        
+
         [Test]
         public void TestNombre2()
         {
@@ -142,6 +146,6 @@ namespace Tests
             string expected = "Ricardo";
             Assert.AreEqual(expected, actual);
         }
-        
+
     }
 }
